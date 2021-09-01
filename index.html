@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/main.min.css" />
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div id="carouselExampleIndicators" class="carousel slide w-25 mx-auto mb-5 mt-5" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="https://picsum.photos/800/800/?blur=1" class="d-block w-100" alt="picsum photos">
+			</div>
+			<div class="carousel-item">
+				<img src="https://picsum.photos/800/800/?blur=2" class="d-block w-100" alt="picsum photos">
+			</div>
+			<div class="carousel-item">
+				<img src="https://picsum.photos/800/800/?blur=3" class="d-block w-100" alt="picsum photos">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+
+	<section class="movies-section movies">
+		<div class="container">
+
+			<h1 class="bolds movise-title w-50 mx-auto fs-1 fst-normal mt-5">
+				Movies catalog
+			</h1>
+
+			<div class="movies-catalog row">
+
+				<div class="movies-catalog__left left col-4 pe-5">
+
+					<form class="left__form form mb-4" action="https://echo.htmlacademy.ru" method="GET">
+						<div>
+							<label class="form-label" for="film_name"></label>
+
+							<input class="form-control" type="text" id="film_name" placeholder="Film name">
+						</div>
+
+						<div>
+							<label class="form-label" for="film_number"></label>
+
+							<input class="form-control" type="number" id="film_number" placeholder="5">
+						</div>
+
+						<div class="my-4">
+							<select class="form-select text-secondary" aria-label="Default select example">
+								<option selected>All</option>
+								<option value="historical">Family</option>
+								<option value="politic">Wild</option>
+								<option value="detective">Cartoons</option>
+							</select>
+						</div>
+
+						<div>
+							<select class="form-select text-secondary" aria-label="Default select example">
+								<option selected>Rating (high to low)</option>
+								<option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+								<option value="4">⭐️⭐️⭐️⭐️</option>
+								<option value="3">⭐️⭐️⭐️</option>
+								<option value="2">⭐️⭐️</option>
+								<option value="1">⭐️</option>
+							</select>
+						</div>
+
+						<button class="my-4 bg-primary text-white border-0 p-3 rounded widths">Search</button>
+					</form>
+
+					<div class="left__bookmarked mb-5">
+						<h3 class="bolds fs-3">Bookmarked movies</h3>
+
+						<ul class="list-unstyled border border-3 border-light rounded">
+							<li class="p-3 border-bottom border-bottom-3 border-light">
+								<h3 class="bolds h5">
+									Avengers: Infinity War
+								</h3>
+
+								<button class="btn btn-danger">Remove</button>
+							</li>
+
+							<li class="p-3 border-bottom border-bottom-3 border-light">
+								<h3 class="bolds h5">
+									The Avengers
+								</h3>
+
+								<button class="btn btn-danger">Remove</button>
+							</li>
+
+							<li class="p-3">
+								<h3 class="bolds h5">
+									12 Years a Slave
+								</h3>
+
+								<button class="btn btn-danger">Remove</button>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="movies-catalog__right right col-8 my-4">
+
+					<h3 class="bolds fs-4">Search results: 39</h3>
+
+					<div class="alert alert-info" role="alert">
+						Use the form on the left to search for a movie
+					</div>
+
+					<div class="cards d-flex mb-5">
+						<div class="card rounded-3 p-0 me-3 pb-2 widths">
+							<img src="./images/avengers.jpg" class="card-img-top" alt="Avengers: Infinity War image film" width="300"
+								height="200">
+
+							<div class="card-body">
+								<h5 class="bolds card-title">Avengers: Infinity War</h5>
+								<div class="d-flex align-content-center">
+									<img class="mini-images" src="./images/calenda.png" alt="" width="24" height="24">
+									<p class="ms-1 mb-3">2018</p>
+								</div>
+								<div class="d-flex align-content-center">
+									<img class="mini-images" src="./images/sta.png" alt="" width="24" height="24">
+									<p class="ms-1 mb-4">8.7</p>
+								</div>
+								<div class="text-center">
+									<a href="#" class="btn btn-outline-primary me-3 ms-2 mb-3 fs-6">Watch trailer</a>
+									<a href="#" class="btn btn-outline-info me-3 mb-3 fs-6" data-bs-toggle="modal" data-bs-target="#exampleModal">Moore info</a>
+									<a href="#" class="btn btn-outline-success mb-3 fs-6">Bookmark</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card rounded-3 p-0 ms-3 pb-2 widths">
+							<img src="./images/Iron-man.jpg" class="card-img-top" alt="The Avengers image film" width="300"
+								height="200">
+
+							<div class="card-body">
+								<h5 class="bolds card-title">The Avengers</h5>
+								<div class="d-flex align-content-center">
+									<img class="mini-images" src="./images/calenda.png" alt="" width="24" height="24">
+									<p class="ms-1 mb-3">2012</p>
+								</div>
+								<div class="d-flex align-content-center">
+									<img class="mini-images" src="./images/sta.png" alt="" width="24" height="24">
+									<p class="ms-1 mb-4">8.1</p>
+								</div>
+								<div class="text-center">
+									<a href="#" class="btn btn-outline-primary me-3 ms-2 mb-3 fs-6">Watch trailer</a>
+									<a href="#" class="btn btn-outline-info me-3 mb-3 fs-6" data-bs-toggle="modal" data-bs-target="#exampleModal">Moore info</a>
+									<a href="#" class="btn btn-outline-success mb-3 fs-6">Bookmark</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<nav aria-label="...">
+						<ul class="pagination pagination-lg justify-content-center">
+							<li class="page-item active" aria-current="page">
+								<span class="page-link">1</span>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">The Avengers (Wikipedia)</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					Marvel's The Avengers[6] (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),[3][7] or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures,[N 1] it is the sixth film in the Marvel Cinematic Universe (MCU). Written and directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers, alongside Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury and the spy agency S.H.I.E.L.D. recruit Tony Stark, Steve Rogers, Bruce Banner, and Thor to form a team capable of stopping Thor's brother Loki from subjugating Earth.
+
+					The film's development began when Marvel Studios received a loan from Merrill Lynch in April 2005. After the success of the film Iron Man in May 2008, Marvel announced that The Avengers would be released in July 2011 and would bring together Tony Stark (Downey), Steve Rogers (Evans), Bruce Banner (Ruffalo), and Thor (Hemsworth) from Marvel's previous films. With the signing of Johansson as Natasha Romanoff in March 2009, the film was pushed back for a 2012 release. Whedon was brought on board in April 2010 and rewrote the original screenplay by Zak Penn. Production began in April 2011 in Albuquerque, New Mexico, before moving to Cleveland, Ohio in August and New York City in September. The film has more than 2,200 visual effects shots.
+
+					The Avengers premiered in Los Angeles on April 11, 2012, and was released in the United States on May 4, as the last film of Phase One of the MCU. The film received praise for Whedon's direction and screenplay, visual effects, action sequences, acting, and musical score, and garnered numerous awards and nominations including Academy Award and BAFTA nominations for achievements in visual effects. The film grossed over $1.5 billion worldwide, setting numerous box office records and becoming the third-highest-grossing film of all time and the highest-grossing film of 2012, as well as the first Marvel production to generate $1 billion in ticket sales. In 2017, The Avengers was featured as one of the 100 greatest films of all time in an Empire magazine poll. Three sequels have been released: Avengers: Age of Ultron (2015), Avengers: Infinity War (2018), and Avengers: Endgame (2019).
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
